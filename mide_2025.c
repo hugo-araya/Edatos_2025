@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/time.h>
-#define MAXIMO 200000
+#define MAXIMO 500000
 
 void lee_datos(int array[], int N);
 void muestra_datos(int array[], int N);
@@ -21,7 +21,7 @@ int main(){
 
     lee_datos(array, MAXIMO); 
 
-    for (cont = 10000; cont < MAXIMO; cont = cont + 10000){
+    for (cont = 500000; cont < MAXIMO+1; cont = cont + 10000){
         // Bloque a medir el tiempo  
         t_1 = clock(); 
 
@@ -114,7 +114,7 @@ void quickSort(int arr[], int bajo, int alto){
 void lee_datos(int array[], int N){
     FILE *ent;
     int i, numero;
-    ent = fopen("aleatorio.txt", "r");
+    ent = fopen("ordenado.txt", "r");
     for (i = 0; i < N; i++){
         fscanf(ent,"%d",&numero);
         array[i] = numero;
