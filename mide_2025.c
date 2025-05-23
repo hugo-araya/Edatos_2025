@@ -27,8 +27,8 @@ int main(){
 
         //burbuja(array, cont);
         //insercion(array, cont);
-        //shellsort(array, cont);
-        quickSort(array, 0, cont-1);
+        shellsort(array, cont);
+        //quickSort(array, 0, cont-1);
 
         t_2 = clock(); 
 
