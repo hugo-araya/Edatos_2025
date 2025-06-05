@@ -1,0 +1,17 @@
+total 38512
+-rw-r--r--@ 1 haraya  staff  5889525 Jun  5 19:09 aleatorio.txt
+-rw-r--r--@ 1 haraya  staff      259 Jun  5 19:09 arre_01.c
+-rw-r--r--@ 1 haraya  staff      367 Jun  5 19:09 arre_02.c
+-rw-r--r--@ 1 haraya  staff      666 Jun  5 19:09 ejemplo_string.c
+-rw-r--r--@ 1 haraya  staff      503 Jun  5 19:09 fact_iter.c
+-rw-r--r--@ 1 haraya  staff      216 Jun  5 19:09 genera_aleatorio.c
+-rw-r--r--@ 1 haraya  staff      186 Jun  5 19:09 genera_inverso.c
+-rw-r--r--@ 1 haraya  staff      186 Jun  5 19:09 genera_ordenado.c
+-rw-r--r--@ 1 haraya  staff  6888896 Jun  5 19:09 inverso.txt
+-rw-r--r--@ 1 haraya  staff     3020 Jun  5 19:09 mide_2025.c
+-rw-r--r--@ 1 haraya  staff     2985 Jun  5 19:09 mide_2025_1.c
+-rw-r--r--@ 1 haraya  staff       48 Jun  5 19:09 nuevo.c
+-rw-r--r--@ 1 haraya  staff  6888896 Jun  5 19:09 ordenado.txt
+-rw-r--r--  1 haraya  staff        0 Jun  5 19:10 paso.txt
+-rw-r--r--@ 1 haraya  staff      255 Jun  5 19:09 prog_1.c
+-rw-r--r--@ 1 haraya  staff      748 Jun  5 19:09 puntero_1.c
