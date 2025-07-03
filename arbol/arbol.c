@@ -126,7 +126,8 @@ void visitar(struct arbol *nodo){
 int alturaArbol(struct arbol *nodo) {
     if (nodo == NULL) {
         return 0;
-    } else {
+    } 
+    else {
         // Calcula la altura de los subárboles izquierdo y derecho
         int alturaIzquierda = alturaArbol(nodo->izq);
         int alturaDerecha = alturaArbol(nodo->der);
@@ -134,7 +135,8 @@ int alturaArbol(struct arbol *nodo) {
         // Devuelve la altura máxima más 1 (para la raíz actual)
         if (alturaIzquierda > alturaDerecha) {
             return (alturaIzquierda + 1);
-        } else {
+        } 
+        else {
             return (alturaDerecha + 1);
         }
     }
