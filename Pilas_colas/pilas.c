@@ -67,10 +67,6 @@ int main() {
     return 0;
 }
 
-int estaVacia(struct Nodo** tope) {
-    return *tope == NULL;
-}
-
 // Función para apilar (push)
 void push(struct Nodo** tope, int valor) {
     struct Nodo* nuevoNodo = (struct Nodo*)malloc(sizeof(struct Nodo));

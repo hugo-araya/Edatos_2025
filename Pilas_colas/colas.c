@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Definición del nodo
+// Definicion del nodo
 struct Nodo {
     int dato;
     struct Nodo* siguiente;
@@ -13,7 +13,7 @@ int desencolar(struct Nodo **, struct Nodo**);
 int elemento_inicio(struct Nodo **);
 void mostrarCola(struct Nodo **); 
 
-// Función principal
+// Funcion principal
 int main() {
     // Punteros al frente y al final de la cola
     struct Nodo* frente = NULL;
@@ -21,13 +21,13 @@ int main() {
     int opcion, valor;
 
     do {
-        printf("\n--- MENÚ ---\n");
+        printf("\n--- MENU ---\n");
         printf("1. Encolar \n");
         printf("2. Desencolar \n");
         printf("3. Ver Inicio de la cola \n");
         printf("4. Mostrar cola\n");
         printf("5. Salir\n");
-        printf("Seleccione una opción: ");
+        printf("Seleccione una opcion: ");
         scanf("%d", &opcion);
 
         switch (opcion) {
@@ -51,19 +51,19 @@ int main() {
                 printf(" ------------------> Saliendo...\n");
                 break;
             default:
-                printf(" ------------------> Opción inválida\n");
+                printf(" ------------------> Opcion invalida\n");
         }
     } while (opcion != 5);
 
     return 0;
 }
 
-// Función para verificar si la cola está vacía
+// Funcion para verificar si la cola esta vacia
 int estaVacia(struct Nodo **frente) {
     return *frente == NULL;
 }
 
-// Función para encolar
+// Funcion para encolar
 void encolar(struct Nodo **frente, struct Nodo **final, int valor) {
     struct Nodo* nuevoNodo = (struct Nodo*)malloc(sizeof(struct Nodo));
 
@@ -83,7 +83,7 @@ void encolar(struct Nodo **frente, struct Nodo **final, int valor) {
 // Función para desencolar
 int desencolar(struct Nodo **frente, struct Nodo **final) {
     if (estaVacia(frente)) {
-        printf(" ------------------> La cola está vacía\n");
+        printf(" ------------------> La cola esta vacia\n");
         return -1;
     }
     int valor = (*frente)->dato;
@@ -100,7 +100,7 @@ int desencolar(struct Nodo **frente, struct Nodo **final) {
 // Función para ver el frente sin eliminarlo
 int elemento_inicio(struct Nodo **frente) {
     if (estaVacia(frente)) {
-        printf(" ------------------> La cola está vacía\n");
+        printf(" ------------------> La cola esta vacia\n");
         return -1;
     }
     return (*frente)->dato;
@@ -110,7 +110,7 @@ int elemento_inicio(struct Nodo **frente) {
 void mostrarCola(struct Nodo **frente) {
     struct Nodo* actual = *frente;
     if (estaVacia(frente)) {
-        printf(" ------------------> La cola está vacía\n");
+        printf(" ------------------> La cola esta vacia\n");
         return;
     }
     printf(" ------------------> Contenido de la cola:\n");
